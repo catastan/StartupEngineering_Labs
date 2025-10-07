@@ -1,0 +1,113 @@
+/* Minimal personal page styles — Stan Cătălin */
+
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #6b7280;
+  --card: #f6f7f8;
+  --link: #2563eb;
+  --border: #e5e7eb;
+}
+
+/* Dark mode automatically */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b0c0f;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --card: #12141a;
+    --link: #60a5fa;
+    --border: #20222a;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Inter, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-header {
+  text-align: center;
+  padding: 48px 16px 24px;
+}
+
+h1 {
+  font-size: clamp(28px, 5vw, 44px);
+  margin-bottom: 8px;
+}
+
+.tagline {
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.links {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  color: var(--muted);
+}
+
+.links a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+main {
+  width: min(820px, 92vw);
+  margin: 16px auto;
+  padding-bottom: 24px;
+  flex: 1;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 18px;
+  margin: 14px 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.list {
+  padding-left: 18px;
+  margin: 8px 0;
+}
+
+.list li {
+  margin: 6px 0;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  text-align: center;
+  padding: 18px 12px 28px;
+}
+
+a {
+  color: var(--link);
+}
+
+a:focus {
+  outline: 2px dashed var(--link);
+  outline-offset: 3px;
+}

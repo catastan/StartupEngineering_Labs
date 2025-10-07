@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Stan Cătălin — Personal Page</title>
+    <meta
+      name="description"
+      content="Personal page of Stan Cătălin, Computer Science student."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1>Stan Cătălin</h1>
+      <p class="tagline">Computer Science Student · Tech Enthusiast</p>
+
+      <nav class="links">
+        <a href="#about">About</a>
+        <span>·</span>
+        <a href="#projects">Projects</a>
+        <span>·</span>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" class="card">
+        <h2>About</h2>
+        <p>
+          Hi, I'm Cătălin — a Computer Science student passionate about
+          programming, problem-solving, and building clean, simple web
+          experiences. I enjoy learning new technologies and exploring how code
+          can make ideas come to life.
+        </p>
+      </section>
+
+      <section id="projects" class="card">
+        <h2>Projects</h2>
+        <ul class="list">
+          <li>
+            <strong>Portfolio Website</strong> — this page, built with pure HTML
+            & CSS. <a href="#">View</a>
+          </li>
+          <li>
+            <strong>Task Manager App</strong> — a simple JavaScript tool to
+            organize daily work. <a href="#">View</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <ul class="list">
+          <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+          <li>
+            GitHub: <a href="https://github.com/yourusername">yourusername</a>
+          </li>
+          <li>
+            LinkedIn:
+            <a href="https://linkedin.com/in/yourusername">yourusername</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <small>© <span id="year"></span> Stan Cătălin</small>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

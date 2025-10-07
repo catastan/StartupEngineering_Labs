@@ -1,0 +1,79 @@
+/**
+
+  Use animations here. Useful resources on http://docs.codacloud.net
+
+**/
+
+.man {
+  animation: jump 1.5s infinite ease-in-out;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-50px);
+  }
+}
+
+.right.hand {
+  animation: righthandWave 2s infinite ease-in-out;
+  transform-origin: 0% 0%;
+}
+
+@keyframes righthandWave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-150deg);
+  }
+}
+
+.left.foot {
+  animation: footMove 1.5s infinite ease-in-out;
+  transform-origin: top center;
+}
+
+.right.foot {
+  animation: footMoveAlt 1.5s infinite ease-in-out;
+  transform-origin: top center;
+}
+
+@keyframes footMove {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes footMoveAlt {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+}
+
+.head {
+  animation: headBob 1.5s infinite ease-in-out;
+}
+
+@keyframes headBob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}

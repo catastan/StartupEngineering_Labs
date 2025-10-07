@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 4 - Tailwind Centering</title>
+    <!-- Include Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <!-- ==================================== -->
+    <!-- 1: Center using FLEXBOX -->
+    <!-- ==================================== -->
+    <div class="h-screen flex justify-center items-center">
+      <div class="bg-white px-6 py-4 shadow-md rounded">
+        Centered Box (Flex)
+      </div>
+    </div>
+
+    <!-- ==================================== -->
+    <!-- 2: Center using GRID -->
+    <!-- ==================================== -->
+    <div class="h-screen grid place-items-center">
+      <div class="bg-white px-6 py-4 shadow-md rounded">
+        Centered Box (Grid)
+      </div>
+    </div>
+
+    <!-- ==================================== -->
+    <!-- 3: Center using ABSOLUTE positioning -->
+    <!-- ==================================== -->
+    <div class="relative h-screen">
+      <div
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-6 py-4 shadow-md rounded"
+      >
+        Centered Box (Absolute)
+      </div>
+    </div>
+  </body>
+</html>
