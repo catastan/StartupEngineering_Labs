@@ -1,0 +1,7 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #1e5799 0%,#2989d8 50%,#7db9e8 100%);;
+}
