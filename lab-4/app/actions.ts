@@ -82,5 +82,6 @@ export const updateItem = async (id: Todo["id"], text: Todo["text"]) => {
     item.text = text;
   }
   //TODO: you should use the find method to find the item with the id passed as an argument and update its text property with the text passed as an argument.
+
   //TODO: the code should be similar to the markDone and markIncomplete methods.
 };
